@@ -114,8 +114,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Layout = ({ children }) => {
-  const classes = useStyles();
   const router = useRouter();
+  const classes = useStyles();
   const [ open, setOpen ] = useState(router.pathname !== '/');
   const [ mappers, setMappers ] = useState({ loaded: false, mappers: {}});
   const [ links, setLinks ] = useState({});
